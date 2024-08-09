@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "@srexi/purecounterjs": "^1.5.0",
+    "animate.css": "^4.1.1",
+    "aos": "^2.3.4",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "glightbox": "^3.3.0",
+    "imagesloaded": "^5.0.0",
+    "isotope-layout": "^3.0.6",
+    "swiper": "^11.1.9",
+    "wow.js": "^1.2.2"
+  }
+}
