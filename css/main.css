@@ -49,7 +49,7 @@
 
 .light-background {
   --background-color: #f9f9f9;
-  --surface-color: #ffffff;
+  --surface-color: #000000;
 }
 
 .dark-background {
@@ -166,7 +166,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 35px;
+  max-height: 45px;
   margin-right: 8px;
 }
 
@@ -191,12 +191,12 @@ h6 {
   margin: 0 0 0 30px;
   border-radius: 4px;
   transition: 0.3s;
-  border: 2px solid var(--core-color);
+  /* border: 2px solid var(--core-color); */
 }
 
 .header .btn-getstarted:hover,
 .header .btn-getstarted:focus:hover {
-  color: var(--default-color);
+  color: var(--surface-color);
   background: var(--core-color);
 }
 
@@ -217,7 +217,14 @@ h6 {
 }
 
 .scrolled .header {
-  box-shadow: 0px 0 18px var(--background-color);
+  background-color: var(--core-color);
+  box-shadow: 0px 0 18px var(--core-color);
+}
+
+.scrolled .header .btn-getstarted:hover,
+.scrolled .header .btn-getstarted:focus:hover {
+  color: var(--core-color);
+  background: var(--surface-color);
 }
 
 /* Index Page Header
@@ -340,6 +347,17 @@ h6 {
     left: -100%;
     visibility: visible;
   }
+}
+
+.scrolled .navmenu a,
+.scrolled .navmenu a:focus {
+  color: var(--nav-dropdown-color);
+}
+
+.scrolled .navmenu li:hover > a,
+.scrolled .navmenu .active,
+.scrolled .navmenu .active:focus {
+  color: var(--nav-color);
 }
 
 /* Navmenu - Mobile */
@@ -470,7 +488,7 @@ h6 {
 --------------------------------------------------------------*/
 .footer {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: var(--contrast-color);
   font-size: 14px;
   position: relative;
 }
@@ -770,8 +788,8 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  background: url("../img/hero-bg.jpg") center center no-repeat;
-  width: 100%;
+  background: url("../img/hadilaiklan2024rsz.gif") center center no-repeat;
+  background-size: cover;
   min-height: 100vh;
   position: relative;
   padding: 120px 0 80px 0;
@@ -1023,8 +1041,26 @@ section,
 # Promo Section
 --------------------------------------------------------------*/
 .promo {
+  background: url("../img/hadilaiklan2024rsz.gif") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  align-items: center;
+  justify-content: center;
   overflow: visible;
   margin-bottom: 200px;
+}
+
+.promo:before {
+  content: "";
+  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.promo .container {
+  position: relative;
+  z-index: 3;
 }
 
 .promo .section-title {
@@ -1278,6 +1314,14 @@ section,
   border-radius: 10px;
   position: relative;
   overflow: hidden;
+}
+
+.subscribe .section-title p {
+  color: var(--heading-color);
+  margin: 0;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
 }
 
 .subscribe h3 {
