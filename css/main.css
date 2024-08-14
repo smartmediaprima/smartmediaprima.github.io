@@ -11,12 +11,14 @@
 # Help: https://bootstrapmade.com/color-system/
 --------------------------------------------------------------*/
 /* Fonts */
+@import url(https://fonts.bunny.net/css?family=inter:100,200,300,400,500,600,700,800,900);
+
 :root {
   --default-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Inter", sans-serif;
-  --nav-font: "Poppins", sans-serif;
+  --nav-font: "Inter", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
@@ -890,10 +892,6 @@ section,
 .about .content h3 {
   font-size: 1.75rem;
   font-weight: 700;
-}
-
-.about .content .fst-italic {
-  color: color-mix(in srgb, var(--default-color), var(--contrast-color) 50%);
 }
 
 .about .content ul {
