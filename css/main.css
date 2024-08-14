@@ -16,13 +16,13 @@
     "Helvetica Neue", "Arial", "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --heading-font: "Inter", sans-serif;
-  --nav-font: "Inter", sans-serif;
+  --nav-font: "Poppins", sans-serif;
 }
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root {
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
-  --core-color: #b19cd9; /* Core color for  majority of the icon or button across the entie website */
+  --core-color: #b19cd9; /* Core color for  majority of the icon or button across the entire website */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
   --accent-color: #ffc451; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
