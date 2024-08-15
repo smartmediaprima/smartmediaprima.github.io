@@ -264,7 +264,7 @@ h6 {
 
   .navmenu a,
   .navmenu a:focus {
-    color: var(--nav-color);
+    color: var(--nav-dropdown-color);
     padding: 18px 15px;
     font-size: 14px;
     font-family: var(--nav-font);
@@ -291,7 +291,7 @@ h6 {
   .navmenu li:hover > a,
   .navmenu .active,
   .navmenu .active:focus {
-    color: var(--nav-hover-color);
+    color: var(--nav-color);
   }
 
   .navmenu .dropdown ul {
@@ -802,7 +802,7 @@ section,
 
 .hero:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, #8170a1, transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -827,7 +827,6 @@ section,
 .hero p {
   margin: 10px 0 0 0;
   font-size: 24px;
-  color: color-mix(in srgb, var(--heading-color), transparent 30%);
 }
 
 .hero .icon-box {
@@ -1050,7 +1049,7 @@ section,
 
 .promo:before {
   content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 30%);
+  background: color-mix(in srgb, #8170a1, transparent 30%);
   position: absolute;
   inset: 0;
   z-index: 2;
@@ -1318,7 +1317,6 @@ section,
   color: var(--heading-color);
   margin: 0;
   font-size: 32px;
-  font-weight: 700;
   text-transform: capitalize;
 }
 
@@ -1335,7 +1333,7 @@ section,
 .subscribe h4 {
   font-size: 35px;
   color: var(--core-color);
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
